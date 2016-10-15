@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Entity Component Model • A-Frame</title>
+    <meta name="description" content="=Entity Component Model • A-Frame">
+    <script src="aframe-v0.3.2.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+
+ 
+  <a-assets>
+    <video id="penguin-sledding" autoplay loop="true" src="video.mp4">
+	<img id="monalisa" src="monalisa.jpg">
+  </a-assets>
+  <!-- Using the asset management system. -->
+   <a-image src="#monalisa" width="60" height="80" rotation="0 390 0" position="70 30 90"></a-image>
+  <a-video src="#penguin-sledding" width="50" height="30" rotation="0 300 0" position="80 10 -10"></a-video>
+  
+		<a-sky src="BreakRoom.jpg" rotation="0 -120 0" material="" geometry="" scale="" position="" visible=""></a-sky>
+		<a-entity position="0 0 10">
+			<a-camera>
+			</a-camera>
+		</a-entity>
+    </a-scene>
+  </body>
+</html>

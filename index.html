@@ -8,8 +8,13 @@
   </head>
   <body>
     <a-scene>
-	 
-      <a-box position="-10 2 -5" rotation="0 0 45" width="4" height="10" depth="2"  color="#6173F4"></a-box>
+	<a-assets>
+		<img id="brahmi" src="photo.jpg">
+	</a-assets>
+      <a-box position="1 2 -5" rotation="0 0 0" width="4" height="4" depth="4"  color="#FFF" src="#brahmi">
+	  <a-animation attribute="rotation" repeat="definite" to="0 360 0"></a-animation>
+
+	  </a-box>
       <a-entity position="1 1 1">
         <a-camera></a-camera>
       </a-entity>
